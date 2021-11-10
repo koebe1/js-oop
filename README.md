@@ -46,7 +46,10 @@ But why can you then call methods on a string (e.g. "string".toUpperCase())?
   
   --> useful to create multiple instances of an object.
   
+  ## Prototypes
   
+  Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+  Every object holds a reference to its prototype in the property __protp__.
   
   
   
