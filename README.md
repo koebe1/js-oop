@@ -24,8 +24,7 @@ But why can you then call methods on a string (e.g. "string".toUpperCase())?
     would log object to the console.
 
 
-  
-  
+ 
   
 ## Defining Objects
   
@@ -94,6 +93,7 @@ But why can you then call methods on a string (e.g. "string".toUpperCase())?
   
   
   
+
   ## Prototypes
   
   Prototypes are the mechanism by which JavaScript objects inherit features from one another.
@@ -204,6 +204,12 @@ Use Magazine constructor in magazine prototype (default is book after inhereting
   
   -> the super keyword calls the constructor of the parent class (in our case book)
   
+    const mag = new Magazine("Sapiens Mag", "Harari", "2021", "Nov"); 
+  
+    mag.getTitle() -> return "Sapiens Mag"
+  
+  ---> Under the hood JS does prototypal inheritance to make the "class extends" syntax work!
+  
   
   ## Some Useful Object Methods 
   
@@ -214,3 +220,6 @@ Use Magazine constructor in magazine prototype (default is book after inhereting
   2. Get the values of an object: 
   
     Oject.values(book)
+  
+  
+    ...to be continued!
