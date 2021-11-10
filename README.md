@@ -51,7 +51,7 @@ But why can you then call methods on a string (e.g. "string".toUpperCase())?
   Prototypes are the mechanism by which JavaScript objects inherit features from one another.
   Every object holds a reference to its prototype in the property __protp__.
   
-  
+  ...to be continued!
   
   ## Some Useful Object Methods 
   
