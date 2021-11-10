@@ -20,19 +20,29 @@ But why can you then call methods on a string (e.g. "string".toUpperCase())?
   
   You can also create a string as an object: 
   
-    --> const string = new String("string") where console.log(typeof string) would log object to the console.
+    --> const string = new String("string") where console.log(typeof string) 
+    would log object to the console.
 
 
 ## Defining Objects
   
   Object literal: 
   
-    const book = { title: "Sapiens", getTitle: function() { return `${this.title}`} }
+    const book = { 
+      title: "Sapiens", 
+      getTitle: function() { 
+        return `${this.title}`
+      } 
+    }
   
   
   Constructor Function (ES5): 
   
-     function Book() {...}  --> const book = new Book()
+     function Book(title) { 
+        this.title = title; 
+     } 
+      
+     const book = new Book("Sapiens")
   
   --> useful to create multiple instances of an object.
   
